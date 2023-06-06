@@ -125,12 +125,18 @@ img {
     width: auto;
 }
 
-.selectables img:hover {
+/* .selectables img:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease-in-out;
-    /* border: 2px solid #eee; */
   
-  }
+  } */
+
+#rock:hover, #paper:hover, #scissors:hover {
+transform: scale(1.1);
+transition: transform 0.3s ease-in-out;
+/* border: 2px solid #eee; */
+
+}
 
 .comparison {
     display: flex;
@@ -153,13 +159,23 @@ img {
     align-items: center;
 }
 
-.contents > div {
+.contents > img {
     width: 10vw;
     height: 10vw;
-    /* background-color: aqua; */
+    background-color: aqua;
+
+    border-radius: 20px;
+    border: 5px solid transparent;
+    border-image: url('./rsrcs/GrungeFinal2.png') 20% round;
+    border-image-slice: 10;
+    /* padding: 1px; */
+    background: none;
+    /* width: 20vw; */
 
 
 }
+
+
 
 .final-comparison {
     width: 15vw;
@@ -170,3 +186,72 @@ img {
     border: 2px solid rgb(255, 255, 255);
 
 } */
+
+#message1 {
+    transition: font-size 1s;
+}
+
+
+
+#humanScore {
+    color: green;
+}
+
+#pcScore {
+    color: red;
+}
+
+/* .restart {
+    text-align: center;
+    display: flex;
+
+    border-radius: 20px;
+    border: 5px solid transparent;
+    border-image: url('./rsrcs/GrungeFinal2.png') 20% round;
+    border-image-slice: 10;
+    padding: 10px;
+    background: none;
+
+} */
+
+/* .restart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background: none;
+    border-radius: 20px;
+    border: 5px solid transparent;
+    border-image: url('./rsrcs/GrungeFinal2.png') 20% round;
+    border-image-slice: 10;
+  } */
+  
+  /* .restart > strong {
+    flex: auto;
+  } */
+
+  .restart {
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    background: none;
+    border-radius: 20px;
+    border: 5px solid transparent;
+    border-image: url('./rsrcs/GrungeFinal2.png') 20% round;
+    border-image-slice: 10;
+    max-width: max-content;
+    margin: 0 auto;
+
+  }
+  
+  .restart:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+    /* border: 2px solid #eee; */
+    
+    }
+
+.game {
+    display: flex;
+    flex-direction: column;
+}
