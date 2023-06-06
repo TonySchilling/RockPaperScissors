@@ -23,6 +23,22 @@ const message2 = document.getElementById('message2')
 const messagesWin = ['Good job! ', 'Nice! ', 'Point for humanity! ', 'Congratulations! ', 'Huzzah! One point for you! ']
 const messagesLose = ['Oooh, tough break...', 'Sorry. ', 'Better luck next time. ', "You'll have to do better than that. ", "What were you thinking! "]
 
+const restart = document.getElementById('restart');
+
+
+restart.addEventListener("click", function() {
+    let score = 0;
+    let human = 0;
+    let computer = 0;
+    let humanSelection = null;
+    message1.style.display = 'none';
+    message2.style.display = 'none';
+    pcScore.textContent = 'Computer 0'
+    humanScore.textContent = 'Human 0'
+    humanSelectionImage.src = './rsrcs/QuestionMark.png'
+    pcSelectionImage.src = './rsrcs/QuestionMark.png'
+
+})
 function computerSelection() {
     const choices = ['rock', 'paper', 'scissors'];
     const selection = choices[Math.floor(Math.random() * choices.length)];
