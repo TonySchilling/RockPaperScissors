@@ -1,0 +1,172 @@
+body {
+
+    background-color: rgb(39, 39, 39);
+    /* color: rgb(79, 133, 180); */
+}
+
+@font-face {
+    font-family: 'CoolHeader';
+    src: url('./rsrcs/TheBattleCont.ttf') format('truetype');
+
+}
+
+@font-face {
+    font-family: 'CoolHeader2';
+    src: url('./rsrcs/28 Days Later.ttf') format('truetype');
+
+}
+
+@font-face {
+    font-family: 'CoolHeader3';
+    src: url('./rsrcs/MakethemSuffeR-Regular.ttf') format('truetype');
+
+}
+
+p {
+    color: aliceblue;
+    font-size: 2vh;
+    line-height: .2em;
+    /* text-align: center; */
+
+}
+
+.header {
+    height: 15vh;
+    background-color: black;
+    justify-content: center;
+    /* align-items: center; */
+    display: flex;
+}
+
+strong {
+    color: aliceblue;
+    font-size: 7vh;
+    text-align: center;
+    font-family: 'CoolHeader3';
+}
+
+h1 {
+    color: aliceblue;
+    font-size: 7vh;
+    /* text-align: left; */
+    font-family: 'CoolHeader3';
+    line-height: .2em;
+
+}
+
+
+img {
+    border-radius: 20px;
+    border: 5px solid transparent;
+    border-image: url('./rsrcs/GrungeFinal2.png') 20% round;
+    border-image-slice: 10;
+    /* padding: 1px; */
+    background: none;
+    width: 20vw;
+}
+
+
+
+.player {
+    /* border: 2px solid rgb(255, 255, 255); */
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+
+
+}
+
+#human {
+    text-align: left;
+}
+
+#computer {
+    text-align: right;
+}
+
+#playfield {
+    width: 50vw;
+    /* flex: 1; */
+    /* border: 2px solid rgb(255, 255, 255); */
+    display: flex;
+    flex-direction: column;
+}
+
+.game-contents {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+
+}
+
+.game-summary {
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    justify-content: top;
+    align-items: flex-start;
+}
+/* 
+.game-summary > h1 {
+    flex: 2;
+} */
+
+
+.selectables {
+    display: flex;
+    gap: 1vw;
+}
+
+.selectables > img {
+    height: 10vh;
+    width: auto;
+}
+
+.selectables img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+    /* border: 2px solid #eee; */
+  
+  }
+
+.comparison {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .left-text {
+    justify-content: center;
+    align-items: center;
+
+} */
+
+.contents {
+    width: 20vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+}
+
+.contents > div {
+    width: 10vw;
+    height: 10vw;
+    /* background-color: aqua; */
+
+
+}
+
+.final-comparison {
+    width: 15vw;
+    /* background-color: aqua; */
+}
+
+/* .comparison > div {
+    border: 2px solid rgb(255, 255, 255);
+
+} */
